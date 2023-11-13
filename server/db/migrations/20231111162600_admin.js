@@ -9,7 +9,7 @@ exports.up = function(knex) {
         table.string("p_admin", 30).notNullable();
         table.string("name_admin", 50).notNullable();
         table.timestamp('created_at').defaultTo(knex.fn.now())
-        table.boolean("approval").notNullable().defaultTo(false);
+        // table.boolean("approval").notNullable().defaultTo(false);
     })
   
 };
